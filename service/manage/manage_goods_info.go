@@ -2,6 +2,9 @@ package manage
 
 import (
 	"errors"
+	"strconv"
+	"time"
+	"strings"
 	"gorm.io/gorm"
 	"main.go/global"
 	"main.go/model/common"
@@ -10,8 +13,6 @@ import (
 	"main.go/model/manage"
 	manageReq "main.go/model/manage/request"
 	"main.go/utils"
-	"strconv"
-	"time"
 )
 
 type ManageGoodsInfoService struct {
@@ -31,19 +32,46 @@ func (m *ManageGoodsInfoService) CreateMallGoodsInfo(req manageReq.GoodsInfoAddP
 	sellingPrice, _ := strconv.Atoi(req.SellingPrice)
 	stockNum, _ := strconv.Atoi(req.StockNum)
 	goodsSellStatus, _ := strconv.Atoi(req.GoodsSellStatus)
+	// reqLv, _ := strconv.Atoi(req.ReqLv)
+	// starForce, _ := strconv.Atoi(req.StarForce)
+	// attStr, _ := strconv.Atoi(req.AttStr)
+	// attDex, _ := strconv.Atoi(req.AttDex)
+	// attInt, _ := strconv.Atoi(req.AttInt)
+	// attLuk, _ := strconv.Atoi(req.AttLuk)
+	// hammer, _ := strconv.Atoi(req.Hammer)
+	ServerArea, _ := strconv.Atoi(req.ServerArea)
+	PotentialColor, _ := strconv.Atoi(req.PotentialColor)
+	PotentialQuality, _ := strconv.Atoi(req.PotentialQuality)
+	AddPotentialColor, _ := strconv.Atoi(req.AddPotentialColor)
+	AddPotentialQuality, _ := strconv.Atoi(req.AddPotentialQuality)
+	Career := strings.Join(req.Career, ",")
 	goodsInfo := manage.MallGoodsInfo{
-		GoodsName:          req.GoodsName,
-		GoodsIntro:         req.GoodsIntro,
-		GoodsCategoryId:    req.GoodsCategoryId,
-		GoodsCoverImg:      req.GoodsCoverImg,
-		GoodsDetailContent: req.GoodsDetailContent,
-		OriginalPrice:      originalPrice,
-		SellingPrice:       sellingPrice,
-		StockNum:           stockNum,
-		Tag:                req.Tag,
-		GoodsSellStatus:    goodsSellStatus,
-		CreateTime:         common.JSONTime{Time: time.Now()},
-		UpdateTime:         common.JSONTime{Time: time.Now()},
+		GoodsName:           req.GoodsName,
+		GoodsIntro:          req.GoodsIntro,
+		GoodsCategoryId:     req.GoodsCategoryId,
+		GoodsCoverImg:       req.GoodsCoverImg,
+		GoodsDetailContent:  req.GoodsDetailContent,
+		OriginalPrice:       originalPrice,
+		SellingPrice:        sellingPrice,
+		StockNum:            stockNum,
+		Tag:                 req.Tag,
+		GoodsSellStatus:     goodsSellStatus,
+		ServerArea:          ServerArea,
+		Career:              Career,
+		ReqLv:               req.ReqLv,
+		StarForce:           req.StarForce,
+		AttStr:              req.AttStr,
+		AttDex:              req.AttDex,
+		AttInt:              req.AttInt,
+		AttLuk:              req.AttLuk,
+		PotentialColor:      PotentialColor,
+		PotentialQuality:    PotentialQuality,
+		AddPotentialColor:   AddPotentialColor,
+		AddPotentialQuality: AddPotentialQuality,
+		Hammer:              req.Hammer,
+		Contact:             req.Contact,
+		CreateTime:          common.JSONTime{Time: time.Now()},
+		UpdateTime:          common.JSONTime{Time: time.Now()},
 	}
 	if err = utils.Verify(goodsInfo, utils.GoodsAddParamVerify); err != nil {
 		return errors.New(err.Error())
@@ -71,19 +99,46 @@ func (m *ManageGoodsInfoService) UpdateMallGoodsInfo(req manageReq.GoodsInfoUpda
 	goodsId, _ := strconv.Atoi(req.GoodsId)
 	originalPrice, _ := strconv.Atoi(req.OriginalPrice)
 	stockNum, _ := strconv.Atoi(req.StockNum)
+	// reqLv, _ := strconv.Atoi(req.ReqLv)
+	// starForce, _ := strconv.Atoi(req.StarForce)
+	// attStr, _ := strconv.Atoi(req.AttStr)
+	// attDex, _ := strconv.Atoi(req.AttDex)
+	// attInt, _ := strconv.Atoi(req.AttInt)
+	// attLuk, _ := strconv.Atoi(req.AttLuk)
+	// hammer, _ := strconv.Atoi(req.Hammer)
+	ServerArea, _ := strconv.Atoi(req.ServerArea)
+	PotentialColor, _ := strconv.Atoi(req.PotentialColor)
+	PotentialQuality, _ := strconv.Atoi(req.PotentialQuality)
+	AddPotentialColor, _ := strconv.Atoi(req.AddPotentialColor)
+	AddPotentialQuality, _ := strconv.Atoi(req.AddPotentialQuality)
+	Career := strings.Join(req.Career, ",")
 	goodsInfo := manage.MallGoodsInfo{
-		GoodsId:            goodsId,
-		GoodsName:          req.GoodsName,
-		GoodsIntro:         req.GoodsIntro,
-		GoodsCategoryId:    req.GoodsCategoryId,
-		GoodsCoverImg:      req.GoodsCoverImg,
-		GoodsDetailContent: req.GoodsDetailContent,
-		OriginalPrice:      originalPrice,
-		SellingPrice:       req.SellingPrice,
-		StockNum:           stockNum,
-		Tag:                req.Tag,
-		GoodsSellStatus:    req.GoodsSellStatus,
-		UpdateTime:         common.JSONTime{Time: time.Now()},
+		GoodsId:             goodsId,
+		GoodsName:           req.GoodsName,
+		GoodsIntro:          req.GoodsIntro,
+		GoodsCategoryId:     req.GoodsCategoryId,
+		GoodsCoverImg:       req.GoodsCoverImg,
+		GoodsDetailContent:  req.GoodsDetailContent,
+		OriginalPrice:       originalPrice,
+		SellingPrice:        req.SellingPrice,
+		StockNum:            stockNum,
+		Tag:                 req.Tag,
+		GoodsSellStatus:     req.GoodsSellStatus,
+		ServerArea:          ServerArea,
+		Career:              Career,
+		ReqLv:               req.ReqLv,
+		StarForce:           req.StarForce,
+		AttStr:              req.AttStr,
+		AttDex:              req.AttDex,
+		AttInt:              req.AttInt,
+		AttLuk:              req.AttLuk,
+		PotentialColor:      PotentialColor,
+		PotentialQuality:    PotentialQuality,
+		AddPotentialColor:   AddPotentialColor,
+		AddPotentialQuality: AddPotentialQuality,
+		Hammer:              req.Hammer,
+		Contact:             req.Contact,
+		UpdateTime:          common.JSONTime{Time: time.Now()},
 	}
 	if err = utils.Verify(goodsInfo, utils.GoodsAddParamVerify); err != nil {
 		return errors.New(err.Error())

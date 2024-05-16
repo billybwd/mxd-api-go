@@ -2,6 +2,10 @@ package mall
 
 import (
 	"errors"
+	"strconv"
+	"strings"
+	"time"
+
 	"github.com/jinzhu/copier"
 	"gorm.io/gorm"
 	"main.go/global"
@@ -10,9 +14,6 @@ import (
 	mallReq "main.go/model/mall/request"
 	mallRes "main.go/model/mall/response"
 	"main.go/utils"
-	"strconv"
-	"strings"
-	"time"
 )
 
 type MallUserService struct {
@@ -27,7 +28,7 @@ func (m *MallUserService) RegisterUser(req mallReq.RegisterUserParam) (err error
 	return global.GVA_DB.Create(&mall.MallUser{
 		LoginName:     req.LoginName,
 		PasswordMd5:   utils.MD5V([]byte(req.Password)),
-		IntroduceSign: "随新所欲，蜂富多彩",
+		IntroduceSign: "人生游戏，游戏人生",
 		CreateTime:    common.JSONTime{Time: time.Now()},
 	}).Error
 

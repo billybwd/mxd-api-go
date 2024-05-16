@@ -1,0 +1,1978 @@
+nohup: ignoring input
+您正在使用config的默认值,config的路径为config.yaml
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[mxd]2024/05/15 - 23:53:56.332	[34minfo[0m	/opt/mxd-api-go/initialize/router.go:15	use middleware logger
+[mxd]2024/05/15 - 23:53:56.332	[34minfo[0m	/opt/mxd-api-go/initialize/router.go:18	use middleware cors
+[GIN-debug] GET    /health                   --> main.go/initialize.Routers.func1 (4 handlers)
+[GIN-debug] POST   /manage-api/v1/createMallAdminUser --> main.go/api/v1/manage.(*ManageAdminUserApi).CreateAdminUser-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/adminUser/name --> main.go/api/v1/manage.(*ManageAdminUserApi).UpdateAdminUserName-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/adminUser/password --> main.go/api/v1/manage.(*ManageAdminUserApi).UpdateAdminUserPassword-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/users      --> main.go/api/v1/manage.(*ManageAdminUserApi).UserList-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/users/:lockStatus --> main.go/api/v1/manage.(*ManageAdminUserApi).LockUser-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/adminUser/profile --> main.go/api/v1/manage.(*ManageAdminUserApi).AdminUserProfile-fm (5 handlers)
+[GIN-debug] DELETE /manage-api/v1/logout     --> main.go/api/v1/manage.(*ManageAdminUserApi).AdminLogout-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/upload/file --> main.go/api/v1/manage.(*ManageAdminUserApi).UploadFile-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/adminUser/login --> main.go/api/v1/manage.(*ManageAdminUserApi).AdminLogin-fm (4 handlers)
+[GIN-debug] POST   /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).CreateCategory-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).UpdateCategory-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).GetCategoryList-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/categories/:id --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).GetCategory-fm (5 handlers)
+[GIN-debug] DELETE /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).DelCategory-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/categories4Select --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).ListForSelect-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/goods      --> main.go/api/v1/manage.(*ManageGoodsInfoApi).CreateGoodsInfo-fm (4 handlers)
+[GIN-debug] DELETE /manage-api/v1/deleteMallGoodsInfo --> main.go/api/v1/manage.(*ManageGoodsInfoApi).DeleteGoodsInfo-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/goods/status/:status --> main.go/api/v1/manage.(*ManageGoodsInfoApi).ChangeGoodsInfoByIds-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/goods      --> main.go/api/v1/manage.(*ManageGoodsInfoApi).UpdateGoodsInfo-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/goods/:id  --> main.go/api/v1/manage.(*ManageGoodsInfoApi).FindGoodsInfo-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/goods/list --> main.go/api/v1/manage.(*ManageGoodsInfoApi).GetGoodsInfoList-fm (4 handlers)
+[GIN-debug] POST   /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).CreateCarousel-fm (5 handlers)
+[GIN-debug] DELETE /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).DeleteCarousel-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).UpdateCarousel-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/carousels/:id --> main.go/api/v1/manage.(*ManageCarouselApi).FindCarousel-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).GetCarouselList-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/indexConfigs --> main.go/api/v1/manage.(*ManageIndexConfigApi).CreateIndexConfig-fm (4 handlers)
+[GIN-debug] POST   /manage-api/v1/indexConfigs/delete --> main.go/api/v1/manage.(*ManageIndexConfigApi).DeleteIndexConfig-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/indexConfigs --> main.go/api/v1/manage.(*ManageIndexConfigApi).UpdateIndexConfig-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/indexConfigs/:id --> main.go/api/v1/manage.(*ManageIndexConfigApi).FindIndexConfig-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/indexConfigs --> main.go/api/v1/manage.(*ManageIndexConfigApi).GetIndexConfigList-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/orders/checkDone --> main.go/api/v1/manage.(*ManageOrderApi).CheckDoneOrder-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/orders/checkOut --> main.go/api/v1/manage.(*ManageOrderApi).CheckOutOrder-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/orders/close --> main.go/api/v1/manage.(*ManageOrderApi).CloseOrder-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/orders/:orderId --> main.go/api/v1/manage.(*ManageOrderApi).FindMallOrder-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/orders     --> main.go/api/v1/manage.(*ManageOrderApi).GetMallOrderList-fm (5 handlers)
+[GIN-debug] GET    /api/v1/index-infos       --> main.go/api/v1/mall.(*MallIndexApi).MallIndexInfo-fm (4 handlers)
+[GIN-debug] GET    /api/v1/search            --> main.go/api/v1/mall.(*MallGoodsInfoApi).GoodsSearch-fm (4 handlers)
+[GIN-debug] GET    /api/v1/goods/detail/:id  --> main.go/api/v1/mall.(*MallGoodsInfoApi).GoodsDetail-fm (4 handlers)
+[GIN-debug] GET    /api/v1/categories        --> main.go/api/v1/mall.(*MallGoodsCategoryApi).GetGoodsCategory-fm (4 handlers)
+[GIN-debug] PUT    /api/v1/user/info         --> main.go/api/v1/mall.(*MallUserApi).UserInfoUpdate-fm (5 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> main.go/api/v1/mall.(*MallUserApi).GetUserInfo-fm (5 handlers)
+[GIN-debug] POST   /api/v1/user/logout       --> main.go/api/v1/mall.(*MallUserApi).UserLogout-fm (5 handlers)
+[GIN-debug] POST   /api/v1/user/register     --> main.go/api/v1/mall.(*MallUserApi).UserRegister-fm (4 handlers)
+[GIN-debug] POST   /api/v1/user/login        --> main.go/api/v1/mall.(*MallUserApi).UserLogin-fm (4 handlers)
+[GIN-debug] GET    /api/v1/address           --> main.go/api/v1/mall.(*MallUserAddressApi).AddressList-fm (5 handlers)
+[GIN-debug] POST   /api/v1/address           --> main.go/api/v1/mall.(*MallUserAddressApi).SaveUserAddress-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/address           --> main.go/api/v1/mall.(*MallUserAddressApi).UpdateMallUserAddress-fm (5 handlers)
+[GIN-debug] GET    /api/v1/address/:addressId --> main.go/api/v1/mall.(*MallUserAddressApi).GetMallUserAddress-fm (5 handlers)
+[GIN-debug] GET    /api/v1/address/default   --> main.go/api/v1/mall.(*MallUserAddressApi).GetMallUserDefaultAddress-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/address/:addressId --> main.go/api/v1/mall.(*MallUserAddressApi).DeleteUserAddress-fm (5 handlers)
+[GIN-debug] GET    /api/v1/shop-cart         --> main.go/api/v1/mall.(*MallShopCartApi).CartItemList-fm (5 handlers)
+[GIN-debug] POST   /api/v1/shop-cart         --> main.go/api/v1/mall.(*MallShopCartApi).SaveMallShoppingCartItem-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/shop-cart         --> main.go/api/v1/mall.(*MallShopCartApi).UpdateMallShoppingCartItem-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/shop-cart/:newBeeMallShoppingCartItemId --> main.go/api/v1/mall.(*MallShopCartApi).DelMallShoppingCartItem-fm (5 handlers)
+[GIN-debug] GET    /api/v1/shop-cart/settle  --> main.go/api/v1/mall.(*MallShopCartApi).ToSettle-fm (5 handlers)
+[GIN-debug] GET    /api/v1/paySuccess        --> main.go/api/v1/mall.(*MallOrderApi).PaySuccess-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/order/:orderNo/finish --> main.go/api/v1/mall.(*MallOrderApi).FinishOrder-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/order/:orderNo/cancel --> main.go/api/v1/mall.(*MallOrderApi).CancelOrder-fm (5 handlers)
+[GIN-debug] GET    /api/v1/order/:orderNo    --> main.go/api/v1/mall.(*MallOrderApi).OrderDetailPage-fm (5 handlers)
+[GIN-debug] GET    /api/v1/order             --> main.go/api/v1/mall.(*MallOrderApi).OrderList-fm (5 handlers)
+[GIN-debug] POST   /api/v1/saveOrder         --> main.go/api/v1/mall.(*MallOrderApi).SaveOrder-fm (5 handlers)
+[mxd]2024/05/15 - 23:53:56.333	[34minfo[0m	/opt/mxd-api-go/initialize/router.go:53	router register success
+[mxd]2024/05/15 - 23:53:56.334	[34minfo[0m	/opt/mxd-api-go/core/server.go:24	server run success on 	{"address": ":8888"}
+2024/05/15 23:53:56 net.Listen error: listen tcp :8888: bind: address already in use
+[mxd]2024/05/15 - 23:53:56.334	[31merror[0m	/opt/mxd-api-go/core/server.go:26	net.Listen error: listen tcp :8888: bind: address already in use
+nohup: ignoring input
+您正在使用config的默认值,config的路径为config.yaml
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[mxd]2024/05/15 - 23:55:40.859	[34minfo[0m	/opt/mxd-api-go/initialize/router.go:15	use middleware logger
+[mxd]2024/05/15 - 23:55:40.859	[34minfo[0m	/opt/mxd-api-go/initialize/router.go:18	use middleware cors
+[GIN-debug] GET    /health                   --> main.go/initialize.Routers.func1 (4 handlers)
+[GIN-debug] POST   /manage-api/v1/createMallAdminUser --> main.go/api/v1/manage.(*ManageAdminUserApi).CreateAdminUser-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/adminUser/name --> main.go/api/v1/manage.(*ManageAdminUserApi).UpdateAdminUserName-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/adminUser/password --> main.go/api/v1/manage.(*ManageAdminUserApi).UpdateAdminUserPassword-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/users      --> main.go/api/v1/manage.(*ManageAdminUserApi).UserList-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/users/:lockStatus --> main.go/api/v1/manage.(*ManageAdminUserApi).LockUser-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/adminUser/profile --> main.go/api/v1/manage.(*ManageAdminUserApi).AdminUserProfile-fm (5 handlers)
+[GIN-debug] DELETE /manage-api/v1/logout     --> main.go/api/v1/manage.(*ManageAdminUserApi).AdminLogout-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/upload/file --> main.go/api/v1/manage.(*ManageAdminUserApi).UploadFile-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/adminUser/login --> main.go/api/v1/manage.(*ManageAdminUserApi).AdminLogin-fm (4 handlers)
+[GIN-debug] POST   /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).CreateCategory-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).UpdateCategory-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).GetCategoryList-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/categories/:id --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).GetCategory-fm (5 handlers)
+[GIN-debug] DELETE /manage-api/v1/categories --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).DelCategory-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/categories4Select --> main.go/api/v1/manage.(*ManageGoodsCategoryApi).ListForSelect-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/goods      --> main.go/api/v1/manage.(*ManageGoodsInfoApi).CreateGoodsInfo-fm (4 handlers)
+[GIN-debug] DELETE /manage-api/v1/deleteMallGoodsInfo --> main.go/api/v1/manage.(*ManageGoodsInfoApi).DeleteGoodsInfo-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/goods/status/:status --> main.go/api/v1/manage.(*ManageGoodsInfoApi).ChangeGoodsInfoByIds-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/goods      --> main.go/api/v1/manage.(*ManageGoodsInfoApi).UpdateGoodsInfo-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/goods/:id  --> main.go/api/v1/manage.(*ManageGoodsInfoApi).FindGoodsInfo-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/goods/list --> main.go/api/v1/manage.(*ManageGoodsInfoApi).GetGoodsInfoList-fm (4 handlers)
+[GIN-debug] POST   /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).CreateCarousel-fm (5 handlers)
+[GIN-debug] DELETE /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).DeleteCarousel-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).UpdateCarousel-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/carousels/:id --> main.go/api/v1/manage.(*ManageCarouselApi).FindCarousel-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/carousels  --> main.go/api/v1/manage.(*ManageCarouselApi).GetCarouselList-fm (5 handlers)
+[GIN-debug] POST   /manage-api/v1/indexConfigs --> main.go/api/v1/manage.(*ManageIndexConfigApi).CreateIndexConfig-fm (4 handlers)
+[GIN-debug] POST   /manage-api/v1/indexConfigs/delete --> main.go/api/v1/manage.(*ManageIndexConfigApi).DeleteIndexConfig-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/indexConfigs --> main.go/api/v1/manage.(*ManageIndexConfigApi).UpdateIndexConfig-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/indexConfigs/:id --> main.go/api/v1/manage.(*ManageIndexConfigApi).FindIndexConfig-fm (4 handlers)
+[GIN-debug] GET    /manage-api/v1/indexConfigs --> main.go/api/v1/manage.(*ManageIndexConfigApi).GetIndexConfigList-fm (4 handlers)
+[GIN-debug] PUT    /manage-api/v1/orders/checkDone --> main.go/api/v1/manage.(*ManageOrderApi).CheckDoneOrder-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/orders/checkOut --> main.go/api/v1/manage.(*ManageOrderApi).CheckOutOrder-fm (5 handlers)
+[GIN-debug] PUT    /manage-api/v1/orders/close --> main.go/api/v1/manage.(*ManageOrderApi).CloseOrder-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/orders/:orderId --> main.go/api/v1/manage.(*ManageOrderApi).FindMallOrder-fm (5 handlers)
+[GIN-debug] GET    /manage-api/v1/orders     --> main.go/api/v1/manage.(*ManageOrderApi).GetMallOrderList-fm (5 handlers)
+[GIN-debug] GET    /api/v1/index-infos       --> main.go/api/v1/mall.(*MallIndexApi).MallIndexInfo-fm (4 handlers)
+[GIN-debug] GET    /api/v1/search            --> main.go/api/v1/mall.(*MallGoodsInfoApi).GoodsSearch-fm (4 handlers)
+[GIN-debug] GET    /api/v1/goods/detail/:id  --> main.go/api/v1/mall.(*MallGoodsInfoApi).GoodsDetail-fm (4 handlers)
+[GIN-debug] GET    /api/v1/categories        --> main.go/api/v1/mall.(*MallGoodsCategoryApi).GetGoodsCategory-fm (4 handlers)
+[GIN-debug] PUT    /api/v1/user/info         --> main.go/api/v1/mall.(*MallUserApi).UserInfoUpdate-fm (5 handlers)
+[GIN-debug] GET    /api/v1/user/info         --> main.go/api/v1/mall.(*MallUserApi).GetUserInfo-fm (5 handlers)
+[GIN-debug] POST   /api/v1/user/logout       --> main.go/api/v1/mall.(*MallUserApi).UserLogout-fm (5 handlers)
+[GIN-debug] POST   /api/v1/user/register     --> main.go/api/v1/mall.(*MallUserApi).UserRegister-fm (4 handlers)
+[GIN-debug] POST   /api/v1/user/login        --> main.go/api/v1/mall.(*MallUserApi).UserLogin-fm (4 handlers)
+[GIN-debug] GET    /api/v1/address           --> main.go/api/v1/mall.(*MallUserAddressApi).AddressList-fm (5 handlers)
+[GIN-debug] POST   /api/v1/address           --> main.go/api/v1/mall.(*MallUserAddressApi).SaveUserAddress-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/address           --> main.go/api/v1/mall.(*MallUserAddressApi).UpdateMallUserAddress-fm (5 handlers)
+[GIN-debug] GET    /api/v1/address/:addressId --> main.go/api/v1/mall.(*MallUserAddressApi).GetMallUserAddress-fm (5 handlers)
+[GIN-debug] GET    /api/v1/address/default   --> main.go/api/v1/mall.(*MallUserAddressApi).GetMallUserDefaultAddress-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/address/:addressId --> main.go/api/v1/mall.(*MallUserAddressApi).DeleteUserAddress-fm (5 handlers)
+[GIN-debug] GET    /api/v1/shop-cart         --> main.go/api/v1/mall.(*MallShopCartApi).CartItemList-fm (5 handlers)
+[GIN-debug] POST   /api/v1/shop-cart         --> main.go/api/v1/mall.(*MallShopCartApi).SaveMallShoppingCartItem-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/shop-cart         --> main.go/api/v1/mall.(*MallShopCartApi).UpdateMallShoppingCartItem-fm (5 handlers)
+[GIN-debug] DELETE /api/v1/shop-cart/:newBeeMallShoppingCartItemId --> main.go/api/v1/mall.(*MallShopCartApi).DelMallShoppingCartItem-fm (5 handlers)
+[GIN-debug] GET    /api/v1/shop-cart/settle  --> main.go/api/v1/mall.(*MallShopCartApi).ToSettle-fm (5 handlers)
+[GIN-debug] GET    /api/v1/paySuccess        --> main.go/api/v1/mall.(*MallOrderApi).PaySuccess-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/order/:orderNo/finish --> main.go/api/v1/mall.(*MallOrderApi).FinishOrder-fm (5 handlers)
+[GIN-debug] PUT    /api/v1/order/:orderNo/cancel --> main.go/api/v1/mall.(*MallOrderApi).CancelOrder-fm (5 handlers)
+[GIN-debug] GET    /api/v1/order/:orderNo    --> main.go/api/v1/mall.(*MallOrderApi).OrderDetailPage-fm (5 handlers)
+[GIN-debug] GET    /api/v1/order             --> main.go/api/v1/mall.(*MallOrderApi).OrderList-fm (5 handlers)
+[GIN-debug] POST   /api/v1/saveOrder         --> main.go/api/v1/mall.(*MallOrderApi).SaveOrder-fm (5 handlers)
+[mxd]2024/05/15 - 23:55:40.859	[34minfo[0m	/opt/mxd-api-go/initialize/router.go:53	router register success
+[mxd]2024/05/15 - 23:55:40.860	[34minfo[0m	/opt/mxd-api-go/core/server.go:24	server run success on 	{"address": ":8888"}
+2024/05/15 23:55:40 67535 :8888
+[GIN] 2024/05/15 - 23:56:13 | 204 |      11.942µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+
+2024/05/15 23:56:13 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[2.339ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=5
+
+2024/05/15 23:56:13 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[1.040ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=5 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/15 - 23:56:13 | 200 |    3.805342ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+
+2024/05/15 23:56:13 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[0.995ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=5
+
+2024/05/15 23:56:13 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.762ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=5 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/15 - 23:56:13 | 200 |    1.919949ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+[GIN] 2024/05/15 - 23:56:35 | 204 |       9.798µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=10&categoryLevel=1&parentId=0"
+
+2024/05/15 23:56:35 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.858ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/15 23:56:35 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.736ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/15 23:56:35 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.874ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 10
+[GIN] 2024/05/15 - 23:56:35 | 200 |    3.705719ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=10&categoryLevel=1&parentId=0"
+[GIN] 2024/05/15 - 23:56:37 | 204 |      25.206µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+
+2024/05/15 23:56:37 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:164
+[0m[33m[2.064ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info`
+
+2024/05/15 23:56:37 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:174
+[0m[33m[0.856ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_goods_info` ORDER BY goods_id desc LIMIT 10
+[GIN] 2024/05/15 - 23:56:37 | 200 |    3.226549ms |   192.168.123.1 | GET      "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+[GIN] 2024/05/15 - 23:56:37 | 304 |      72.484µs |   192.168.123.1 | GET      "/static/7e1ece6f6547eb3254b703f9a4325dca_20240515190720.png"
+[GIN] 2024/05/15 - 23:58:17 | 204 |      26.039µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/15 23:58:17 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.340ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/15 23:58:17 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.981ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/15 23:58:17 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[2.598ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/15 - 23:58:17 | 200 |    5.098139ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/15 - 23:58:18 | 204 |       15.71µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+
+2024/05/15 23:58:18 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:164
+[0m[33m[2.188ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info`
+
+2024/05/15 23:58:18 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:174
+[0m[33m[0.776ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_goods_info` ORDER BY goods_id desc LIMIT 10
+[GIN] 2024/05/15 - 23:58:18 | 200 |    3.193299ms |   192.168.123.1 | GET      "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+[GIN] 2024/05/15 - 23:59:34 | 204 |       8.566µs |   192.168.123.1 | OPTIONS  "/api/v1/index-infos"
+[GIN] 2024/05/15 - 23:59:34 | 204 |      10.369µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[1.376ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.940ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.692ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.648ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.850ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.829ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.665ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.680ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/15 - 23:59:34 | 200 |    4.453653ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.668ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.588ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/15 23:59:34 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.723ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/15 - 23:59:34 | 200 |    6.012623ms |   192.168.123.1 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/15 - 23:59:41 | 204 |        5.37µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/15 - 23:59:41 | 204 |       5.651µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart?pageNumber=1"
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.925ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.715ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.700ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.681ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.672ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.776ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.631ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/15 - 23:59:41 | 200 |     4.18112ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/15 23:59:41 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.747ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/15 - 23:59:41 | 200 |    4.021874ms |   192.168.123.1 | GET      "/api/v1/shop-cart?pageNumber=1"
+[GIN] 2024/05/15 - 23:59:43 | 204 |      13.756µs |   192.168.123.1 | OPTIONS  "/api/v1/categories"
+
+2024/05/15 23:59:43 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[1.828ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (0) and category_level =1 and is_deleted = 0 ORDER BY category_rank desc LIMIT 10
+
+2024/05/15 23:59:43 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[0.944ms] [34;1m[rows:3][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (20,21) and category_level =2 and is_deleted = 0 ORDER BY category_rank desc 
+
+2024/05/15 23:59:43 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[0.776ms] [34;1m[rows:16][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (1,2,3) and category_level =3 and is_deleted = 0 ORDER BY category_rank desc 
+[GIN] 2024/05/15 - 23:59:43 | 200 |    3.959828ms |   192.168.123.1 | GET      "/api/v1/categories"
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.019ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.732ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[1.006ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.771ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/15 - 23:59:44 | 200 |    4.767596ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[0.627ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.687ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.585ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.607ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/15 - 23:59:44 | 200 |    2.636175ms |   192.168.123.1 | GET      "/api/v1/shop-cart?pageNumber=1"
+[GIN] 2024/05/15 - 23:59:44 | 204 |      12.683µs |   192.168.123.1 | OPTIONS  "/api/v1/user/info"
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.031ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.822ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.900ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.686ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/15 - 23:59:44 | 200 |    4.652342ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.446ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.651ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/15 23:59:44 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.792ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+[GIN] 2024/05/15 - 23:59:44 | 200 |    3.016781ms |   192.168.123.1 | GET      "/api/v1/user/info"
+[GIN] 2024/05/16 - 00:00:54 | 204 |       4.158µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart?pageNumber=1"
+[GIN] 2024/05/16 - 00:00:54 | 204 |        4.92µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.289ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.245ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.668ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.777ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.607ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.674ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.621ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:00:54 | 200 |    4.376952ms |   192.168.123.1 | GET      "/api/v1/shop-cart?pageNumber=1"
+
+2024/05/16 00:00:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.596ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:00:54 | 200 |    4.529806ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:01:12 | 204 |       7.424µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:01:12 | 204 |        6.02µs |   192.168.123.1 | OPTIONS  "/api/v1/user/info"
+
+2024/05/16 00:01:12 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.994ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:12 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.009ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:12 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.805ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:12 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.800ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:12 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.726ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:01:12 | 200 |    3.650917ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:01:12 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.745ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:01:12 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.730ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:01:12 | 200 |    4.491093ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:01:16 | 204 |       7.904µs |   192.168.123.1 | OPTIONS  "/api/v1/order?pageNumber=1&status="
+
+2024/05/16 00:01:16 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.533ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:208
+[0m[33m[1.029ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:219
+[0m[33m[0.766ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0 
+
+2024/05/16 00:01:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:223
+[0m[33m[0.678ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0  ORDER BY  order_id desc 
+
+2024/05/16 00:01:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:242
+[0m[33m[0.745ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id in (1)
+[GIN] 2024/05/16 - 00:01:16 | 200 |    5.052243ms |   192.168.123.1 | GET      "/api/v1/order?pageNumber=1&status="
+[GIN] 2024/05/16 - 00:01:16 | 404 |       2.996µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+[GIN] 2024/05/16 - 00:01:17 | 204 |       8.356µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:01:17 | 204 |      14.877µs |   192.168.123.1 | OPTIONS  "/api/v1/user/info"
+
+2024/05/16 00:01:17 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.045ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:17 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.003ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:17 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.689ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:17 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.743ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:17 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.700ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+
+2024/05/16 00:01:17 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.723ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+[GIN] 2024/05/16 - 00:01:17 | 200 |    3.566961ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:01:17 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.640ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:01:17 | 200 |    4.293698ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:01:18 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.664ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:18 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.845ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:01:18 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.832ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:01:18 | 200 |    3.515556ms |   192.168.123.1 | GET      "/api/v1/user/info"
+[GIN] 2024/05/16 - 00:04:31 | 204 |       8.504µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 00:04:31 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.871ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:04:31 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.782ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 00:04:31 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.727ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 00:04:31 | 200 |    3.580105ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+[GIN] 2024/05/16 - 00:04:31 | 204 |       7.314µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/goods/203"
+
+2024/05/16 00:04:31 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:152
+[0m[33m[1.676ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id = 203 ORDER BY `tb_newbee_mall_goods_info`.`goods_id` LIMIT 1
+
+2024/05/16 00:04:31 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.949ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=10 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+
+2024/05/16 00:04:31 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.678ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=2 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+
+2024/05/16 00:04:31 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.621ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=20 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+[GIN] 2024/05/16 - 00:04:31 | 200 |     4.07875ms |   192.168.123.1 | GET      "/manage-api/v1/goods/203"
+[GIN] 2024/05/16 - 00:16:20 | 204 |       8.956µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/carousels?pageNumber=1&pageSize=10"
+
+2024/05/16 00:16:20 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.904ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:20 [32m/opt/mxd-api-go/service/manage/manage_carousel.go:72
+[0m[33m[0.872ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_carousel`
+
+2024/05/16 00:16:20 [32m/opt/mxd-api-go/service/manage/manage_carousel.go:76
+[0m[33m[0.648ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` ORDER BY carousel_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:20 | 200 |    3.660498ms |   192.168.123.1 | GET      "/manage-api/v1/carousels?pageNumber=1&pageSize=10"
+[GIN] 2024/05/16 - 00:16:21 | 204 |       8.777µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+
+2024/05/16 00:16:21 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[2.100ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=3
+
+2024/05/16 00:16:21 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.739ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=3 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:21 | 200 |    3.014965ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+[GIN] 2024/05/16 - 00:16:22 | 204 |       7.204µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+
+2024/05/16 00:16:22 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.815ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=4
+
+2024/05/16 00:16:22 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.712ms] [34;1m[rows:8][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=4 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:22 | 200 |    2.711061ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+[GIN] 2024/05/16 - 00:16:24 | 204 |       8.115µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+
+2024/05/16 00:16:24 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.686ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=5
+
+2024/05/16 00:16:24 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.728ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=5 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:24 | 200 |    2.632315ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+[GIN] 2024/05/16 - 00:16:26 | 204 |       8.667µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 00:16:26 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[2.294ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:26 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.669ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 00:16:26 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.701ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 00:16:26 | 200 |    3.902255ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 00:16:28 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.834ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:28 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.950ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 00:16:28 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.738ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 00:16:28 | 200 |    3.726128ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+[GIN] 2024/05/16 - 00:16:29 | 204 |       9.538µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/carousels?pageNumber=1&pageSize=10"
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.889ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_carousel.go:72
+[0m[33m[0.859ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_carousel`
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_carousel.go:76
+[0m[33m[0.574ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` ORDER BY carousel_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:30 | 200 |    3.493114ms |   192.168.123.1 | GET      "/manage-api/v1/carousels?pageNumber=1&pageSize=10"
+[GIN] 2024/05/16 - 00:16:30 | 204 |      28.763µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+[GIN] 2024/05/16 - 00:16:30 | 204 |      30.557µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.898ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=3
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.898ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=3 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:30 | 200 |    2.987836ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[2.102ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=3
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.797ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=3 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:30 | 200 |    3.069728ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+[GIN] 2024/05/16 - 00:16:30 | 204 |       6.652µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+[GIN] 2024/05/16 - 00:16:30 | 204 |       43.17µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.930ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=4
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.907ms] [34;1m[rows:8][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=4 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:30 | 200 |    2.993216ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.493ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=4
+
+2024/05/16 00:16:30 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.615ms] [34;1m[rows:8][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=4 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:30 | 200 |    2.245645ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+[GIN] 2024/05/16 - 00:16:31 | 204 |       7.854µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+[GIN] 2024/05/16 - 00:16:31 | 204 |       8.515µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+
+2024/05/16 00:16:31 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.860ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=5
+
+2024/05/16 00:16:31 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.815ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=5 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:31 | 200 |    2.843498ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+
+2024/05/16 00:16:31 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.976ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=5
+
+2024/05/16 00:16:31 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.823ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=5 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:31 | 200 |    2.966566ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+[GIN] 2024/05/16 - 00:16:32 | 204 |       10.91µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=10&categoryLevel=1&parentId=0"
+
+2024/05/16 00:16:32 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[2.507ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:32 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.653ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 00:16:32 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.690ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:32 | 200 |     4.02881ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=10&categoryLevel=1&parentId=0"
+[GIN] 2024/05/16 - 00:16:32 | 204 |       6.771µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+
+2024/05/16 00:16:32 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:164
+[0m[33m[2.018ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info`
+
+2024/05/16 00:16:32 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:174
+[0m[33m[0.896ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_goods_info` ORDER BY goods_id desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:32 | 200 |    3.193789ms |   192.168.123.1 | GET      "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+[GIN] 2024/05/16 - 00:16:36 | 204 |       7.002µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/users?pageNumber=1&pageSize=10"
+
+2024/05/16 00:16:36 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.838ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:36 [32m/opt/mxd-api-go/service/manage/manage_user.go:32
+[0m[33m[1.149ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_user`
+
+2024/05/16 00:16:36 [32m/opt/mxd-api-go/service/manage/manage_user.go:36
+[0m[33m[0.607ms] [34;1m[rows:3][0m SELECT * FROM `tb_newbee_mall_user` ORDER BY create_time desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:36 | 200 |    3.814832ms |   192.168.123.1 | GET      "/manage-api/v1/users?pageNumber=1&pageSize=10"
+[GIN] 2024/05/16 - 00:16:41 | 204 |      17.403µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+
+2024/05/16 00:16:41 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.383ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:41 [32m/opt/mxd-api-go/service/manage/manage_order.go:138
+[0m[33m[0.861ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order`
+
+2024/05/16 00:16:41 [32m/opt/mxd-api-go/service/manage/manage_order.go:142
+[0m[33m[0.598ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` ORDER BY update_time desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:41 | 200 |    3.066652ms |   192.168.123.1 | GET      "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+[GIN] 2024/05/16 - 00:16:48 | 204 |       8.165µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/16 00:16:49 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.592ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:49 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.803ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:49 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[0.595ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:16:49 | 200 |    3.188849ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 00:16:49 | 204 |       8.366µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+
+2024/05/16 00:16:49 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.570ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:16:49 [32m/opt/mxd-api-go/service/manage/manage_order.go:138
+[0m[33m[0.825ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order`
+
+2024/05/16 00:16:49 [32m/opt/mxd-api-go/service/manage/manage_order.go:142
+[0m[33m[0.609ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` ORDER BY update_time desc LIMIT 10
+[GIN] 2024/05/16 - 00:16:49 | 200 |    3.223704ms |   192.168.123.1 | GET      "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+[GIN] 2024/05/16 - 00:17:12 | 204 |       8.215µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/orders/1"
+
+2024/05/16 00:17:12 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[2.350ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:17:12 [32m/opt/mxd-api-go/service/manage/manage_order.go:100
+[0m[33m[0.587ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE order_id = '1' ORDER BY `tb_newbee_mall_order`.`order_id` LIMIT 1
+
+2024/05/16 00:17:12 [32m/opt/mxd-api-go/service/manage/manage_order.go:104
+[0m[33m[0.556ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id = 1
+[GIN] 2024/05/16 - 00:17:12 | 200 |     3.73357ms |   192.168.123.1 | GET      "/manage-api/v1/orders/1"
+[GIN] 2024/05/16 - 00:17:12 | 404 |       4.248µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+[GIN] 2024/05/16 - 00:17:16 | 204 |        5.36µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+
+2024/05/16 00:17:16 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[2.214ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:17:16 [32m/opt/mxd-api-go/service/manage/manage_order.go:138
+[0m[33m[0.791ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order`
+
+2024/05/16 00:17:16 [32m/opt/mxd-api-go/service/manage/manage_order.go:142
+[0m[33m[0.526ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` ORDER BY update_time desc LIMIT 10
+[GIN] 2024/05/16 - 00:17:16 | 200 |    3.676374ms |   192.168.123.1 | GET      "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+[GIN] 2024/05/16 - 00:17:20 | 204 |       5.319µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/16 00:17:20 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.869ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:17:20 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.655ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:17:20 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[0.610ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:17:20 | 200 |    3.306597ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 00:17:24 | 204 |       16.79µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+
+2024/05/16 00:17:24 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.857ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:17:24 [32m/opt/mxd-api-go/service/manage/manage_order.go:138
+[0m[33m[0.828ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order`
+
+2024/05/16 00:17:24 [32m/opt/mxd-api-go/service/manage/manage_order.go:142
+[0m[33m[0.663ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` ORDER BY update_time desc LIMIT 10
+[GIN] 2024/05/16 - 00:17:24 | 200 |    3.517388ms |   192.168.123.1 | GET      "/manage-api/v1/orders?pageNumber=1&pageSize=10&orderNo=&orderStatus="
+[GIN] 2024/05/16 - 00:22:58 | 204 |      18.474µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/carousels?pageNumber=1&pageSize=10"
+
+2024/05/16 00:22:58 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.599ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:22:58 [32m/opt/mxd-api-go/service/manage/manage_carousel.go:72
+[0m[33m[0.846ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_carousel`
+
+2024/05/16 00:22:58 [32m/opt/mxd-api-go/service/manage/manage_carousel.go:76
+[0m[33m[0.632ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` ORDER BY carousel_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:22:58 | 200 |    3.289447ms |   192.168.123.1 | GET      "/manage-api/v1/carousels?pageNumber=1&pageSize=10"
+[GIN] 2024/05/16 - 00:22:59 | 204 |      11.211µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+
+2024/05/16 00:22:59 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.745ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=3
+
+2024/05/16 00:22:59 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[1.038ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=3 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:22:59 | 200 |    2.988418ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+[GIN] 2024/05/16 - 00:23:00 | 204 |        5.29µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+
+2024/05/16 00:23:00 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.960ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=4
+
+2024/05/16 00:23:00 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.783ms] [34;1m[rows:8][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=4 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:23:00 | 200 |    2.910794ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+[GIN] 2024/05/16 - 00:23:01 | 204 |      11.472µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+
+2024/05/16 00:23:01 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[2.095ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=5
+
+2024/05/16 00:23:01 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.869ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=5 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:23:01 | 200 |    3.169936ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=5"
+[GIN] 2024/05/16 - 00:23:06 | 204 |       8.576µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:23:06 | 204 |       4.678µs |   192.168.123.1 | OPTIONS  "/api/v1/user/info"
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.872ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.766ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.664ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[0.782ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.695ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:06 | 200 |    4.184849ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.627ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.564ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:23:06 | 200 |    2.084331ms |   192.168.123.1 | GET      "/api/v1/user/info"
+[GIN] 2024/05/16 - 00:23:06 | 204 |       8.175µs |   192.168.123.1 | OPTIONS  "/api/v1/order?pageNumber=1&status="
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.260ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_order.go:208
+[0m[33m[0.780ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_order.go:219
+[0m[33m[0.627ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0 
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_order.go:223
+[0m[33m[0.672ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0  ORDER BY  order_id desc 
+
+2024/05/16 00:23:06 [32m/opt/mxd-api-go/service/mall/mall_order.go:242
+[0m[33m[0.672ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id in (1)
+[GIN] 2024/05/16 - 00:23:06 | 200 |    5.237233ms |   192.168.123.1 | GET      "/api/v1/order?pageNumber=1&status="
+[GIN] 2024/05/16 - 00:23:06 | 404 |       2.774µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.909ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.933ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.744ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.731ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.617ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.609ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:23:07 | 200 |     3.44672ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.581ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:07 | 200 |    4.006549ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.966ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_order.go:208
+[0m[33m[0.724ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_order.go:219
+[0m[33m[0.631ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0 
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_order.go:223
+[0m[33m[0.622ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0  ORDER BY  order_id desc 
+
+2024/05/16 00:23:07 [32m/opt/mxd-api-go/service/mall/mall_order.go:242
+[0m[33m[0.687ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id in (1)
+[GIN] 2024/05/16 - 00:23:07 | 200 |    4.918042ms |   192.168.123.1 | GET      "/api/v1/order?pageNumber=1&status="
+[GIN] 2024/05/16 - 00:23:07 | 404 |       2.104µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+
+2024/05/16 00:23:08 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.134ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:08 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.147ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:08 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.759ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:08 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.746ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:08 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.686ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:23:08 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.684ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:23:08 | 200 |    3.787451ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:23:08 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.694ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:08 | 200 |     4.46486ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:23:12 | 204 |      19.356µs |   192.168.123.1 | OPTIONS  "/api/v1/order?pageNumber=1&status="
+
+2024/05/16 00:23:12 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.797ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:12 [32m/opt/mxd-api-go/service/mall/mall_order.go:208
+[0m[33m[0.877ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:12 [32m/opt/mxd-api-go/service/mall/mall_order.go:219
+[0m[33m[0.825ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0 
+
+2024/05/16 00:23:12 [32m/opt/mxd-api-go/service/mall/mall_order.go:223
+[0m[33m[0.692ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0  ORDER BY  order_id desc 
+
+2024/05/16 00:23:12 [32m/opt/mxd-api-go/service/mall/mall_order.go:242
+[0m[33m[0.619ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id in (1)
+[GIN] 2024/05/16 - 00:23:12 | 200 |    5.077035ms |   192.168.123.1 | GET      "/api/v1/order?pageNumber=1&status="
+[GIN] 2024/05/16 - 00:23:12 | 404 |       2.375µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+[GIN] 2024/05/16 - 00:23:14 | 204 |      11.112µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:23:14 | 204 |       6.433µs |   192.168.123.1 | OPTIONS  "/api/v1/user/info"
+
+2024/05/16 00:23:14 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.016ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:14 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.986ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:14 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.762ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:14 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.738ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:14 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.754ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+
+2024/05/16 00:23:14 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.694ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+[GIN] 2024/05/16 - 00:23:14 | 200 |    3.730957ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:23:14 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.644ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:14 | 200 |    4.444862ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:23:15 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.089ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:15 [32m/opt/mxd-api-go/service/mall/mall_order.go:208
+[0m[33m[0.687ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:15 [32m/opt/mxd-api-go/service/mall/mall_order.go:219
+[0m[33m[0.871ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0 
+
+2024/05/16 00:23:15 [32m/opt/mxd-api-go/service/mall/mall_order.go:223
+[0m[33m[0.767ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0  ORDER BY  order_id desc 
+
+2024/05/16 00:23:15 [32m/opt/mxd-api-go/service/mall/mall_order.go:242
+[0m[33m[0.569ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id in (1)
+[GIN] 2024/05/16 - 00:23:15 | 200 |    5.279412ms |   192.168.123.1 | GET      "/api/v1/order?pageNumber=1&status="
+[GIN] 2024/05/16 - 00:23:15 | 404 |       5.711µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.789ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.780ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.767ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.749ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.804ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:23:16 | 200 |    3.482917ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.812ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.744ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:16 | 200 |    4.338504ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.623ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:208
+[0m[33m[0.993ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:219
+[0m[33m[0.815ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0 
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:223
+[0m[33m[0.745ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0  ORDER BY  order_id desc 
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_order.go:242
+[0m[33m[0.651ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id in (1)
+[GIN] 2024/05/16 - 00:23:16 | 200 |    5.116058ms |   192.168.123.1 | GET      "/api/v1/order?pageNumber=1&status="
+[GIN] 2024/05/16 - 00:23:16 | 404 |       4.198µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.734ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.707ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.671ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.744ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.626ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.710ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+[GIN] 2024/05/16 - 00:23:16 | 200 |    3.273597ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:23:16 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.632ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:16 | 200 |    3.959231ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:23:17 | 204 |       4.638µs |   192.168.123.1 | OPTIONS  "/api/v1/order?pageNumber=1&status="
+
+2024/05/16 00:23:17 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.311ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:17 [32m/opt/mxd-api-go/service/mall/mall_order.go:208
+[0m[33m[0.658ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:17 [32m/opt/mxd-api-go/service/mall/mall_order.go:219
+[0m[33m[0.624ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0 
+
+2024/05/16 00:23:17 [32m/opt/mxd-api-go/service/mall/mall_order.go:223
+[0m[33m[0.667ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order` WHERE user_id =7 and is_deleted=0  ORDER BY  order_id desc 
+
+2024/05/16 00:23:17 [32m/opt/mxd-api-go/service/mall/mall_order.go:242
+[0m[33m[0.603ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_order_item` WHERE order_id in (1)
+[GIN] 2024/05/16 - 00:23:17 | 200 |    5.172434ms |   192.168.123.1 | GET      "/api/v1/order?pageNumber=1&status="
+[GIN] 2024/05/16 - 00:23:17 | 404 |       6.482µs |   192.168.123.1 | GET      "/goods-img/79e2b467-a075-46ef-ab43-aa0535f8e4c9.jpg"
+
+2024/05/16 00:23:19 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.738ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:19 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.743ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:19 [32m/opt/mxd-api-go/service/mall/mall_user.go:57
+[0m[33m[0.712ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:19 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.673ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:19 [32m/opt/mxd-api-go/service/mall/mall_user.go:62
+[0m[33m[0.709ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user` WHERE user_id =7 ORDER BY `tb_newbee_mall_user`.`user_id` LIMIT 1
+
+2024/05/16 00:23:19 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.741ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+[GIN] 2024/05/16 - 00:23:19 | 200 |    3.336856ms |   192.168.123.1 | GET      "/api/v1/user/info"
+
+2024/05/16 00:23:19 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.745ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:19 | 200 |    4.154883ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:23:21 | 204 |       6.691µs |   192.168.123.1 | OPTIONS  "/api/v1/index-infos"
+[GIN] 2024/05/16 - 00:23:21 | 204 |      13.515µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[1.800ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.874ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.700ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.848ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.677ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.833ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.782ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:21 | 200 |    4.195218ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.811ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.768ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.697ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/16 00:23:21 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[1.003ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/16 - 00:23:21 | 200 |    7.260038ms |   192.168.123.1 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/16 - 00:23:46 | 204 |      13.285µs |   192.168.123.1 | OPTIONS  "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy="
+
+2024/05/16 00:23:46 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[2.011ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:46 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[0.978ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY stock_num desc LIMIT 10
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+[GIN] 2024/05/16 - 00:23:46 | 200 |    3.175775ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy="
+[GIN] 2024/05/16 - 00:23:49 | 204 |       8.084µs |   192.168.123.1 | OPTIONS  "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=new"
+
+2024/05/16 00:23:49 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[2.163ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:49 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.141ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY goods_id desc LIMIT 10
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+[GIN] 2024/05/16 - 00:23:49 | 200 |    3.461747ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=new"
+[GIN] 2024/05/16 - 00:23:50 | 204 |       8.216µs |   192.168.123.1 | OPTIONS  "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=price"
+
+2024/05/16 00:23:50 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[2.354ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:50 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.414ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY selling_price asc LIMIT 10
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+[GIN] 2024/05/16 - 00:23:50 | 200 |    3.918295ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=price"
+
+2024/05/16 00:23:51 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[2.071ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:51 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.013ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY goods_id desc LIMIT 10
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+[GIN] 2024/05/16 - 00:23:51 | 200 |    3.247609ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=new"
+[GIN] 2024/05/16 - 00:23:52 | 204 |       8.094µs |   192.168.123.1 | OPTIONS  "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy="
+
+2024/05/16 00:23:52 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[1.932ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:52 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.415ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY stock_num desc LIMIT 10
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+[GIN] 2024/05/16 - 00:23:52 | 200 |     3.50106ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy="
+
+2024/05/16 00:23:53 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[2.027ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:53 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.064ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY goods_id desc LIMIT 10
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+[GIN] 2024/05/16 - 00:23:53 | 200 |    3.230096ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=new"
+
+2024/05/16 00:23:53 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[2.112ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:53 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.638ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY stock_num desc LIMIT 10
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+[GIN] 2024/05/16 - 00:23:53 | 200 |    3.880123ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy="
+[GIN] 2024/05/16 - 00:23:54 | 204 |       7.213µs |   192.168.123.1 | OPTIONS  "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=new"
+
+2024/05/16 00:23:54 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[2.062ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:54 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.008ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY goods_id desc LIMIT 10
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+[GIN] 2024/05/16 - 00:23:54 | 200 |    3.226249ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=new"
+
+2024/05/16 00:23:55 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[1.822ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:55 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.348ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY stock_num desc LIMIT 10
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+[GIN] 2024/05/16 - 00:23:55 | 200 |    3.376919ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy="
+
+2024/05/16 00:23:55 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[1.885ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:55 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[0.985ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY goods_id desc LIMIT 10
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+[GIN] 2024/05/16 - 00:23:55 | 200 |    3.056414ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=new"
+[GIN] 2024/05/16 - 00:23:56 | 204 |       8.957µs |   192.168.123.1 | OPTIONS  "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=price"
+
+2024/05/16 00:23:56 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:27
+[0m[33m[1.697ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%'
+
+2024/05/16 00:23:56 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:38
+[0m[33m[1.547ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_name like '%发%' or goods_intro like '%发%' ORDER BY selling_price asc LIMIT 10
+string(nameRune[:4]) =  放大放大
+string(nameRune[:4]) =      
+string(nameRune[:4]) =  放大发 
+string(nameRune[:4]) =  解决  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  森海塞尔
+string(nameRune[:4]) =  黑色  
+[GIN] 2024/05/16 - 00:23:56 | 200 |    3.387608ms |   192.168.123.1 | GET      "/api/v1/search?pageNumber=1&keyword=%E5%8F%91&orderBy=price"
+[GIN] 2024/05/16 - 00:23:57 | 204 |        5.61µs |   192.168.123.1 | OPTIONS  "/api/v1/index-infos"
+[GIN] 2024/05/16 - 00:23:57 | 204 |       3.336µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[1.645ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.824ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.933ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.846ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.679ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.794ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.700ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:23:57 | 200 |    4.262293ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.677ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.762ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.713ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/16 00:23:57 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.789ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/16 - 00:23:57 | 200 |    6.717571ms |   192.168.123.1 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/16 - 00:24:32 | 204 |       7.123µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:24:32 | 204 |       7.244µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart?pageNumber=1"
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.800ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.796ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.653ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[0.731ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.640ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:24:32 | 200 |    4.100181ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.669ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.520ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:24:32 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.708ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:24:32 | 200 |    2.796461ms |   192.168.123.1 | GET      "/api/v1/shop-cart?pageNumber=1"
+[GIN] 2024/05/16 - 00:24:38 | 204 |       9.549µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/16 00:24:38 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.965ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:24:38 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.870ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:24:38 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[0.683ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:24:38 | 200 |    3.686833ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 00:24:44 | 204 |       8.115µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs/12"
+
+2024/05/16 00:24:44 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:86
+[0m[33m[2.053ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_id = 12 ORDER BY `tb_newbee_mall_index_config`.`config_id` LIMIT 1
+[GIN] 2024/05/16 - 00:24:44 | 200 |    2.113663ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs/12"
+[GIN] 2024/05/16 - 00:24:52 | 204 |       5.491µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+
+2024/05/16 00:24:52 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.941ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=4
+
+2024/05/16 00:24:52 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.851ms] [34;1m[rows:8][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=4 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:24:52 | 200 |    2.951048ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=4"
+[GIN] 2024/05/16 - 00:24:54 | 204 |        5.51µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+
+2024/05/16 00:24:54 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:102
+[0m[33m[1.906ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_index_config` WHERE config_type=3
+
+2024/05/16 00:24:54 [32m/opt/mxd-api-go/service/manage/manage_index_config.go:106
+[0m[33m[0.997ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type=3 ORDER BY config_rank desc LIMIT 10
+[GIN] 2024/05/16 - 00:24:54 | 200 |    3.110885ms |   192.168.123.1 | GET      "/manage-api/v1/indexConfigs?pageNumber=1&pageSize=10&configType=3"
+[GIN] 2024/05/16 - 00:25:00 | 204 |       7.013µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:25:00 | 204 |      31.337µs |   192.168.123.1 | OPTIONS  "/api/v1/index-infos"
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[1.722ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.045ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.682ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.779ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.619ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.794ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.706ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:25:00 | 200 |    4.247994ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.656ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.653ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.614ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/16 00:25:00 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.739ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/16 - 00:25:00 | 200 |    6.303791ms |   192.168.123.1 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/16 - 00:25:02 | 204 |      12.273µs |   192.168.123.1 | OPTIONS  "/api/v1/goods/detail/120"
+
+2024/05/16 00:25:02 [32m/opt/mxd-api-go/service/mall/mall_goods_info.go:56
+[0m[33m[1.643ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id = 120 ORDER BY `tb_newbee_mall_goods_info`.`goods_id` LIMIT 1
+[GIN] 2024/05/16 - 00:25:02 | 200 |    1.790162ms |   192.168.123.1 | GET      "/api/v1/goods/detail/120"
+[GIN] 2024/05/16 - 00:25:02 | 404 |       3.597µs |   192.168.123.1 | GET      "/goods-img/aa83ce5b-2db1-4ecf-bc4f-f43c437894d7.jpg"
+
+2024/05/16 00:25:02 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.067ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:25:02 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.871ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:25:02 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.609ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:25:02 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.649ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:25:02 | 200 |    3.329922ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 00:25:06 | 204 |        5.11µs |   192.168.123.1 | OPTIONS  "/api/v1/index-infos"
+[GIN] 2024/05/16 - 00:25:06 | 204 |       3.537µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[2.179ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[2.236ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.837ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[1.123ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[1.137ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.870ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.803ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.693ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 00:25:06 | 200 |   13.395894ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.764ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.596ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/16 00:25:06 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.744ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/16 - 00:25:06 | 200 |   15.007145ms |   192.168.123.1 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/16 - 00:50:04 | 204 |       11.04µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+
+2024/05/16 00:50:04 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:164
+[0m[33m[1.826ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_info`
+
+2024/05/16 00:50:04 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:174
+[0m[33m[0.797ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_goods_info` ORDER BY goods_id desc LIMIT 10
+[GIN] 2024/05/16 - 00:50:04 | 200 |    2.902158ms |   192.168.123.1 | GET      "/manage-api/v1/goods/list?pageNumber=1&pageSize=10"
+[GIN] 2024/05/16 - 00:50:04 | 304 |      39.082µs |   192.168.123.1 | GET      "/static/7e1ece6f6547eb3254b703f9a4325dca_20240515190720.png"
+[GIN] 2024/05/16 - 00:50:05 | 204 |      34.083µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 00:50:05 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.838ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:50:05 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.755ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 00:50:05 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.688ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 00:50:05 | 200 |     3.50861ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+[GIN] 2024/05/16 - 00:50:05 | 204 |       6.984µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/goods/203"
+
+2024/05/16 00:50:05 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:152
+[0m[33m[1.799ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id = 203 ORDER BY `tb_newbee_mall_goods_info`.`goods_id` LIMIT 1
+
+2024/05/16 00:50:05 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.711ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=10 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+
+2024/05/16 00:50:05 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.621ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=2 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+
+2024/05/16 00:50:05 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.583ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=20 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+[GIN] 2024/05/16 - 00:50:05 | 200 |    3.865098ms |   192.168.123.1 | GET      "/manage-api/v1/goods/203"
+[GIN] 2024/05/16 - 00:50:23 | 204 |       6.292µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[2.320ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.731ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[0.837ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/16 - 00:50:23 | 200 |    4.028743ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 00:50:23 | 204 |       8.987µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.882ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.647ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.724ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 00:50:23 | 200 |    3.390592ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+[GIN] 2024/05/16 - 00:50:23 | 204 |       5.009µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/goods/203"
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_goods_info.go:152
+[0m[33m[1.876ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id = 203 ORDER BY `tb_newbee_mall_goods_info`.`goods_id` LIMIT 1
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.798ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=10 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.701ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=2 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+
+2024/05/16 00:50:23 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:91
+[0m[33m[0.750ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_id=20 ORDER BY `tb_newbee_mall_goods_category`.`category_id` LIMIT 1
+[GIN] 2024/05/16 - 00:50:23 | 200 |    4.391263ms |   192.168.123.1 | GET      "/manage-api/v1/goods/203"
+[GIN] 2024/05/16 - 01:34:31 | 404 |       5.208µs |  167.94.145.105 | GET      "/"
+[GIN] 2024/05/16 - 01:34:34 | 404 |       8.427µs |  167.94.145.105 | GET      "/"
+[GIN] 2024/05/16 - 02:21:51 | 404 |       3.617µs |   64.23.199.192 | GET      "/"
+[GIN] 2024/05/16 - 02:38:10 | 204 |       8.737µs |  180.16.143.126 | OPTIONS  "/api/v1/index-infos"
+
+2024/05/16 02:38:11 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[1.282ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/16 02:38:11 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.920ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/16 02:38:11 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.833ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/16 02:38:11 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.789ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/16 02:38:11 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.708ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/16 02:38:11 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.719ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/16 02:38:11 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.672ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/16 - 02:38:11 | 200 |    6.326423ms |  180.16.143.126 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/16 - 02:38:11 | 200 |    4.005569ms |  180.16.143.126 | GET      "/static/7e1ece6f6547eb3254b703f9a4325dca_20240515190720.png"
+[GIN] 2024/05/16 - 02:38:24 | 204 |      13.896µs |  180.16.143.126 | OPTIONS  "/api/v1/categories"
+
+2024/05/16 02:38:24 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[1.617ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (0) and category_level =1 and is_deleted = 0 ORDER BY category_rank desc LIMIT 10
+
+2024/05/16 02:38:24 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[0.824ms] [34;1m[rows:3][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (20,21) and category_level =2 and is_deleted = 0 ORDER BY category_rank desc 
+
+2024/05/16 02:38:24 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[1.047ms] [34;1m[rows:16][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (1,2,3) and category_level =3 and is_deleted = 0 ORDER BY category_rank desc 
+[GIN] 2024/05/16 - 02:38:24 | 200 |    3.796821ms |  180.16.143.126 | GET      "/api/v1/categories"
+[GIN] 2024/05/16 - 02:38:29 | 204 |       8.536µs |  180.16.143.126 | OPTIONS  "/api/v1/index-infos"
+
+2024/05/16 02:38:29 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[2.055ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/16 02:38:29 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.908ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/16 02:38:29 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.841ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/16 02:38:29 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.734ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/16 02:38:29 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.821ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/16 02:38:29 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.686ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/16 02:38:29 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.770ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/16 - 02:38:29 | 200 |    7.291021ms |  180.16.143.126 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/16 - 02:38:35 | 204 |      16.522µs |  180.16.143.126 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 02:38:35 | 200 |      24.385µs |  180.16.143.126 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 02:39:13 | 204 |      17.872µs |  180.16.143.126 | OPTIONS  "/api/v1/categories"
+
+2024/05/16 02:39:13 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[1.737ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (0) and category_level =1 and is_deleted = 0 ORDER BY category_rank desc LIMIT 10
+
+2024/05/16 02:39:13 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[0.981ms] [34;1m[rows:3][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (20,21) and category_level =2 and is_deleted = 0 ORDER BY category_rank desc 
+
+2024/05/16 02:39:13 [32m/opt/mxd-api-go/service/mall/mall_goods_category.go:101
+[0m[33m[0.846ms] [34;1m[rows:16][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE parent_id in (1,2,3) and category_level =3 and is_deleted = 0 ORDER BY category_rank desc 
+[GIN] 2024/05/16 - 02:39:13 | 200 |     3.93652ms |  180.16.143.126 | GET      "/api/v1/categories"
+[GIN] 2024/05/16 - 03:02:56 | 204 |      18.916µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/16 03:02:56 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[2.003ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 03:02:56 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.767ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 03:02:56 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[0.790ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/16 - 03:02:56 | 200 |    3.718726ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 03:03:09 | 204 |      19.828µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 03:03:09 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.211ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 03:03:09 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.701ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 03:03:09 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.789ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 03:03:09 | 200 |    2.860875ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 03:03:13 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[2.390ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 03:03:13 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[1.063ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 03:03:13 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.732ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 03:03:13 | 200 |    4.413904ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+[GIN] 2024/05/16 - 03:03:18 | 204 |       8.245µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/logout"
+
+2024/05/16 03:03:18 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.605ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 03:03:18 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:17
+[0m[33m[5.689ms] [34;1m[rows:1][0m DELETE FROM `tb_newbee_mall_admin_user_token` WHERE token ='eb264c83de2bd2c5b6290c06c9c1481c'
+[GIN] 2024/05/16 - 03:03:18 | 200 |    7.382309ms |   192.168.123.1 | DELETE   "/manage-api/v1/logout"
+[GIN] 2024/05/16 - 03:24:48 | 204 |       9.137µs |  133.106.33.179 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 03:24:48 | 200 |      15.519µs |  133.106.33.179 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 03:39:09 | 404 |      13.846µs |  198.235.24.230 | GET      "/"
+[GIN] 2024/05/16 - 05:05:04 | 404 |       4.958µs |   199.45.155.44 | GET      "/"
+[GIN] 2024/05/16 - 05:05:08 | 404 |       7.995µs |   199.45.155.44 | GET      "/"
+[GIN] 2024/05/16 - 09:49:21 | 204 |       8.826µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 09:49:21 | 200 |      12.844µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 09:50:54 | 204 |      12.324µs |   192.168.123.1 | OPTIONS  "/api/v1/shop-cart"
+[GIN] 2024/05/16 - 09:50:54 | 204 |       9.558µs |   192.168.123.1 | OPTIONS  "/api/v1/index-infos"
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_carousel.go:15
+[0m[33m[1.698ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_carousel` WHERE is_deleted = 0 ORDER BY carousel_rank desc LIMIT 5
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_user_token.go:12
+[0m[33m[1.722ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:25
+[0m[33m[0.644ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_user_token` WHERE token ='ee4ed734062ca985900fdc781cc887c2' ORDER BY `tb_newbee_mall_user_token`.`user_id` LIMIT 1
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.754ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 3 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 4
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:29
+[0m[33m[0.674ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_shopping_cart_item` WHERE user_id=7 and is_deleted = 0
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.695ms] [34;1m[rows:4][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (100,142,159,179)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  12支装
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  透明 3
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  耳机  
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_shop_cart.go:34
+[0m[33m[0.721ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (120)
+[GIN] 2024/05/16 - 09:50:54 | 200 |    3.910293ms |   192.168.123.1 | GET      "/api/v1/shop-cart"
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.674ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 4 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 5
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.648ms] [34;1m[rows:5][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (193,195,183,120,169)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑色  
+string(nameRune[:4]) =  索尼（S
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  诺基亚（
+string(nameRune[:4]) =  新蜂精选
+string(nameRune[:4]) =  Bose
+string(nameRune[:4]) =  无线耳机
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:16
+[0m[33m[0.603ms] [34;1m[rows:10][0m SELECT * FROM `tb_newbee_mall_index_config` WHERE config_type = 5 AND is_deleted = 0 ORDER BY config_rank desc LIMIT 10
+
+2024/05/16 09:50:54 [32m/opt/mxd-api-go/service/mall/mall_index_info.go:27
+[0m[33m[0.735ms] [34;1m[rows:9][0m SELECT * FROM `tb_newbee_mall_goods_info` WHERE goods_id in (195,180,147,194,137,160,154,154,113,158)
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  其他  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  MUJI
+string(nameRune[:4]) =  白色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  原色  
+string(nameRune[:4]) =  无印良品
+string(nameRune[:4]) =  黑*横条
+string(nameRune[:4]) =  小米 R
+string(nameRune[:4]) =  真无线蓝
+string(nameRune[:4]) =  Appl
+string(nameRune[:4]) =  苹果蓝牙
+string(nameRune[:4]) =  Beat
+string(nameRune[:4]) =  头戴式 
+string(nameRune[:4]) =  索尼 W
+string(nameRune[:4]) =  高解析度
+[GIN] 2024/05/16 - 09:50:54 | 200 |    6.235583ms |   192.168.123.1 | GET      "/api/v1/index-infos"
+[GIN] 2024/05/16 - 09:50:54 | 304 |      67.716µs |   192.168.123.1 | GET      "/static/7e1ece6f6547eb3254b703f9a4325dca_20240515190720.png"
+[GIN] 2024/05/16 - 09:52:40 | 204 |      39.362µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 09:52:40 | 200 |      45.705µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:31:34 | 204 |       6.021µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:31:34 | 200 |      19.936µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:37:54 | 204 |       6.261µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:37:54 | 200 |      16.902µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:44:28 | 204 |       5.992µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:44:28 | 200 |      23.033µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:45:51 | 204 |       6.011µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 10:45:51 | 200 |      16.409µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:01:56 | 204 |       7.734µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:01:57 | 200 |      19.727µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:01:58 | 200 |      28.172µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:05:03 | 204 |      11.291µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:05:03 | 200 |      17.312µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:06:19 | 204 |      13.706µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:06:19 | 200 |       32.44µs |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:06:46 | 204 |      13.184µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/login"
+
+2024/05/16 11:06:46 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:73
+[0m[33m[1.942ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE login_user_name='admin' AND login_password='e10adc3949ba59abbe56e057f20f883e' ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+
+2024/05/16 11:06:46 [31;1m/opt/mxd-api-go/service/manage/manage_admin_user.go:76 [35;1mrecord not found
+[0m[33m[0.745ms] [34;1m[rows:0][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE `admin_user_id` = 1 ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 11:06:46 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:87
+[0m[33m[14.476ms] [34;1m[rows:1][0m INSERT INTO `tb_newbee_mall_admin_user_token` (`token`,`update_time`,`expire_time`,`admin_user_id`) VALUES ('e4222e9d64f25a68be7893c7ace62495','2024-05-16 11:06:46.946','2024-05-18 11:06:46.946',1)
+[GIN] 2024/05/16 - 11:06:46 | 200 |   17.576632ms |   192.168.123.1 | POST     "/manage-api/v1/adminUser/login"
+[GIN] 2024/05/16 - 11:06:47 | 204 |      10.819µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/16 11:06:47 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.781ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='e4222e9d64f25a68be7893c7ace62495' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 11:06:47 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.960ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='e4222e9d64f25a68be7893c7ace62495' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 11:06:47 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[0.910ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/16 - 11:06:47 | 200 |    3.958357ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:07:03 | 204 |      11.892µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/adminUser/profile"
+
+2024/05/16 11:07:03 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.909ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='e4222e9d64f25a68be7893c7ace62495' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 11:07:03 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:64
+[0m[33m[0.836ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='e4222e9d64f25a68be7893c7ace62495' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 11:07:03 [32m/opt/mxd-api-go/service/manage/manage_admin_user.go:67
+[0m[33m[0.657ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user` WHERE admin_user_id = 1 ORDER BY `tb_newbee_mall_admin_user`.`admin_user_id` LIMIT 1
+[GIN] 2024/05/16 - 11:07:03 | 200 |    3.565605ms |   192.168.123.1 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:07:38 | 204 |       8.546µs |   192.168.123.1 | OPTIONS  "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+
+2024/05/16 11:07:38 [32m/opt/mxd-api-go/service/manage/manage_admin_user_token.go:12
+[0m[33m[1.929ms] [34;1m[rows:1][0m SELECT * FROM `tb_newbee_mall_admin_user_token` WHERE token ='e4222e9d64f25a68be7893c7ace62495' ORDER BY `tb_newbee_mall_admin_user_token`.`admin_user_id` LIMIT 1
+
+2024/05/16 11:07:38 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:77
+[0m[33m[0.981ms] [34;1m[rows:1][0m SELECT count(*) FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0
+
+2024/05/16 11:07:38 [32m/opt/mxd-api-go/service/manage/manage_goods_category.go:84
+[0m[33m[0.667ms] [34;1m[rows:2][0m SELECT * FROM `tb_newbee_mall_goods_category` WHERE category_level=1 AND parent_id=0 AND is_deleted=0 AND is_deleted=0 ORDER BY category_rank desc LIMIT 1000
+[GIN] 2024/05/16 - 11:07:38 | 200 |    3.739267ms |   192.168.123.1 | GET      "/manage-api/v1/categories?pageNumber=1&pageSize=1000&categoryLevel=1&parentId=0"
+[GIN] 2024/05/16 - 11:17:09 | 204 |       7.834µs |  133.106.37.136 | OPTIONS  "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 11:17:09 | 200 |       21.86µs |  133.106.37.136 | GET      "/manage-api/v1/adminUser/profile"
+[GIN] 2024/05/16 - 20:14:17 | 404 |       4.769µs |    118.26.39.44 | GET      "/"
+[GIN] 2024/05/16 - 20:16:28 | 404 |       4.188µs | 154.212.141.230 | GET      "/"
+[GIN] 2024/05/16 - 20:16:28 | 404 |       3.928µs | 154.212.141.230 | GET      "/favicon.ico"
+[GIN] 2024/05/16 - 20:40:47 | 404 |       9.698µs |   198.235.24.74 | GET      "/"

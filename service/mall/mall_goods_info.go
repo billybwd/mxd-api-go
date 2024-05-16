@@ -2,6 +2,7 @@ package mall
 
 import (
 	"errors"
+
 	"github.com/jinzhu/copier"
 	"main.go/global"
 	mallRes "main.go/model/mall/response"
@@ -20,7 +21,7 @@ func (m *MallGoodsInfoService) MallGoodsListBySearch(pageNumber int, goodsCatego
 	if keyword != "" {
 		db.Where("goods_name like ? or goods_intro like ?", "%"+keyword+"%", "%"+keyword+"%")
 	}
-	if goodsCategoryId >= 0 {
+	if goodsCategoryId > 0 {
 		db.Where("goods_category_id= ?", goodsCategoryId)
 	}
 	err = db.Count(&total).Error

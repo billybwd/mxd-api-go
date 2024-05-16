@@ -149,5 +149,5 @@ func (m *ManageAdminUserApi) UploadFile(c *gin.Context) {
 		return
 	}
 	//这里直接使用本地的url
-	response.OkWithData("http://localhost:8888/"+file.Url, c)
+	response.OkWithData("http://api.bwdeye.com:888/"+file.Url, c)
 }
